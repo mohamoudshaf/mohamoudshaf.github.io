@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Who will win the biggest battle ever!&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>* {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #0c2461, #1e3799);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow-x: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 900px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: rgba(0, 0, 0, 0.4);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 3.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-shadow: 3px 3px 0 #ff6b6b;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.subtitle {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.4rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #f8f8f8;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0.9;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.battle-area {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-around;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 50px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 350px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.versus {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 4rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ffdd59;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-shadow: 2px 2px 0 #ff6b6b;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>left: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translate(-50%, -50%);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>z-index: 5;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.fighter {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 300px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>z-index: 10;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.fighter h2 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ffdd59;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-shadow: 2px 2px 0 #ff6b6b;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.button-container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px 50px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>z-index: 20;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>#dad-btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(to right, #4a69bd, #1e3799);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>#dad-btn:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: scale(1.05);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(to right, #5c7cfa, #2c3e9e);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>#me-btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(to right, #ff6b6b, #ee5a52);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.1s linear;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>#me-btn:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: not-allowed;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.instructions {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: rgba(255, 255, 255, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 800px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.result {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ffdd59;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-shadow: 2px 2px 0 #ff6b6b;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 70px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dad-avatar, .me-avatar {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 6rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dad-avatar {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #4a69bd;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.me-avatar {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ff6b6b;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.escape-count {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ffdd59;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 768px) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 2.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>.battle-area {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>gap: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>.versus {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>transform: none;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>margin: 20px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Who will win the biggest battle ever!&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="subtitle"&gt;Only one can emerge victorious... choose your champion!&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="battle-area"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="fighter"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="dad-avatar"&gt;👨‍🦰&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;Dad&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="button-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button id="dad-btn" class="btn"&gt;Dad&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="versus"&gt;VS&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="fighter"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="me-avatar"&gt;🧒&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;Me&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="button-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button id="me-btn" class="btn"&gt;Me&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="escape-count"&gt;Escapes: &lt;span id="escape-count"&gt;0&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="result" id="result"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Click "Dad" to see who wins!</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="instructions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;&lt;strong&gt;How it works:&lt;/strong&gt; The "Me" button has a mind of its own and will dodge your cursor when you try to click it! Your only choice is to click the "Dad" button to see who wins the biggest battle ever. Try to catch the "Me" button if you can!&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Get the buttons and result element</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const dadBtn = document.getElementById('dad-btn');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const meBtn = document.getElementById('me-btn');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const result = document.getElementById('result');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const escapeCountElement = document.getElementById('escape-count');</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Track how many times the "Me" button escapes</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let escapeCount = 0;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Function to move the "Me" button away from cursor</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function moveButton(event) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Get button position and dimensions</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const buttonRect = meBtn.getBoundingClientRect();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const buttonX = buttonRect.left + buttonRect.width / 2;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const buttonY = buttonRect.top + buttonRect.height / 2;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Get cursor position</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const cursorX = event.clientX;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const cursorY = event.clientY;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Calculate distance between cursor and button center</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const distance = Math.sqrt(</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Math.pow(cursorX - buttonX, 2) +<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>Math.pow(cursorY - buttonY, 2)</p>
+<p class="p1"><span class="Apple-converted-space">            </span>);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// If cursor is within 150px of button, move it away</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (distance &lt; 150) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Calculate direction away from cursor</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const angle = Math.atan2(buttonY - cursorY, buttonX - cursorX);</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Calculate new position</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const moveDistance = 180;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const newX = buttonX + Math.cos(angle) * moveDistance;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const newY = buttonY + Math.sin(angle) * moveDistance;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Get viewport dimensions</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const viewportWidth = window.innerWidth;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const viewportHeight = window.innerHeight;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Keep button within viewport bounds</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const buttonWidth = buttonRect.width;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const buttonHeight = buttonRect.height;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>let finalX = newX;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>let finalY = newY;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Constrain to viewport</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (newX &lt; buttonWidth / 2 + 10) finalX = buttonWidth / 2 + 10;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (newX &gt; viewportWidth - buttonWidth / 2 - 10) finalX = viewportWidth - buttonWidth / 2 - 10;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (newY &lt; buttonHeight / 2 + 10) finalY = buttonHeight / 2 + 10;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (newY &gt; viewportHeight - buttonHeight / 2 - 10) finalY = viewportHeight - buttonHeight / 2 - 10;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Apply the new position using transform for smooth movement</p>
+<p class="p1"><span class="Apple-converted-space">                </span>meBtn.style.transform = `translate(${finalX - buttonX}px, ${finalY - buttonY}px)`;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Increment escape count</p>
+<p class="p1"><span class="Apple-converted-space">                </span>escapeCount++;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>escapeCountElement.textContent = escapeCount;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Function to reset button position</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function resetButtonPosition() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>meBtn.style.transform = 'translate(0, 0)';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Add event listeners for mouse movement</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('mousemove', moveButton);</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Also move button when it's touched (for mobile)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>meBtn.addEventListener('touchstart', function(event) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Trigger movement for touch</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const touch = event.touches[0];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const fakeMouseEvent = new MouseEvent('mousemove', {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>clientX: touch.clientX,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>clientY: touch.clientY</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>moveButton(fakeMouseEvent);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>event.preventDefault();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}, { passive: false });</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Prevent clicking on the "Me" button</p>
+<p class="p1"><span class="Apple-converted-space">        </span>meBtn.addEventListener('click', function(event) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>event.preventDefault();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>event.stopPropagation();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>result.textContent = "Hey! No clicking on me! I'm too quick for you!";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>result.style.color = "#ff6b6b";</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Reset after a moment</p>
+<p class="p1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>result.textContent = "You can only click on Dad!";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>result.style.color = "#ffdd59";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}, 2000);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>return false;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Handle the "Dad" button click</p>
+<p class="p1"><span class="Apple-converted-space">        </span>dadBtn.addEventListener('click', function() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>result.textContent = "Dad wins! (Of course he does, he's Dad!) 🏆";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>result.style.color = "#4a69bd";</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Add some celebration effect</p>
+<p class="p1"><span class="Apple-converted-space">            </span>dadBtn.style.transform = 'scale(1.2)';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>dadBtn.style.boxShadow = '0 0 40px #ffdd59';</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>dadBtn.style.transform = 'scale(1.05)';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>dadBtn.style.boxShadow = '0 15px 25px rgba(0, 0, 0, 0.4)';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}, 300);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Reset button position periodically to keep it from going off-screen</p>
+<p class="p1"><span class="Apple-converted-space">        </span>setInterval(resetButtonPosition, 3000);</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Initial instructions</p>
+<p class="p1"><span class="Apple-converted-space">        </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>result.textContent = "Try to click the 'Me' button if you dare!";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}, 3000);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
